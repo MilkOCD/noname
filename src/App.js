@@ -196,7 +196,7 @@ const Road = () => {
     </div>
   </div> : <>
     <div className={cx('div-note')}>
-      { result == 0 ? 'Cái này thì chỉnh mình em biết thôi ^^' : result == 2 ? 'Nếu thế thì cho anh biết với!' : '' }
+      { result == 0 ? 'Cái này thì chỉ mình em biết thôi ^^. Em nghĩ sao?' : result == 2 ? 'Nếu thế thì cho anh biết với!' : '' }
     </div>
     {
       result == 0 && <img alt='' src="images/sourceImage/tanghinh.jpg" style={{ width: '100%' }}/>
