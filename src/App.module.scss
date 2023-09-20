@@ -1,0 +1,78 @@
+.road-container {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    padding: 10%;
+
+    .div-note {
+        background: #e54255;
+        width: 100%;
+        padding: 20px 0;
+        margin-bottom: 2rem;
+        border-radius: 10px;
+    }
+
+    .grid-emoji {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+
+        .emoji-item {
+            background: #ffdc06;
+            border-radius: 10px;
+            border: 3px solid #e8e8e8;
+
+            img {
+                margin: 1rem;
+                width: 2rem;
+                height: 2rem;
+            }
+            
+            .emoji-desc {
+                font-size: 11px;
+                font-family: 'roboto';
+            }
+
+            &:hover {
+                cursor: pointer;
+                opacity: .5;
+            }
+        }
+
+        .emoji-item-odd {
+            background: #e54255;
+            border-radius: 10px;
+            border: 3px solid #e8e8e8;
+
+            img {
+                margin: 1rem;
+                width: 2rem;
+                height: 2rem;
+            }
+            
+            .emoji-desc {
+                font-size: 11px;
+                font-family: 'roboto';
+            }
+
+            &:hover {
+                cursor: pointer;
+                opacity: .3;
+            }
+        }
+    }
+}
+
+.disable {
+    pointer-events: none;
+    opacity: .5;
+}
+
+.btn-next {
+    background: #e54255;
+}
+
+.btn-prev {
+    background: #ffdc06;
+}
