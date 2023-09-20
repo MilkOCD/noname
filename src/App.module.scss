@@ -1,14 +1,13 @@
 .road-container {
     box-sizing: border-box;
     width: 100vw;
-    height: 100vh;
     padding: 10%;
 
     .div-note {
-        background: #e54255;
+        background: #ffced3;
         width: 100%;
-        padding: 20px 0;
-        margin-bottom: 2rem;
+        padding: 10px 0;
+        margin-bottom: 1rem;
         border-radius: 10px;
     }
 
@@ -19,19 +18,19 @@
         gap: 1rem;
 
         .emoji-item {
-            background: #ffdc06;
+            background: #fff9d7;
             border-radius: 10px;
             border: 3px solid #e8e8e8;
 
             img {
-                margin: 1rem;
+                margin: .7rem 1rem 0 1rem;
                 width: 2rem;
                 height: 2rem;
             }
             
             .emoji-desc {
-                font-size: 11px;
-                font-family: 'roboto';
+                font-size: 12.2px;
+                margin-bottom: .2rem;
             }
 
             &:hover {
@@ -41,19 +40,19 @@
         }
 
         .emoji-item-odd {
-            background: #e54255;
+            background: #ffced3;
             border-radius: 10px;
             border: 3px solid #e8e8e8;
 
             img {
-                margin: 1rem;
+                margin: .7rem 1rem 0 1rem;
                 width: 2rem;
                 height: 2rem;
             }
             
             .emoji-desc {
-                font-size: 11px;
-                font-family: 'roboto';
+                font-size: 12.2px;
+                margin-bottom: .2rem;
             }
 
             &:hover {
@@ -62,6 +61,13 @@
             }
         }
     }
+
+    .group-btn {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 5px;
+        margin-top: 1rem;
+    }
 }
 
 .disable {
@@ -69,10 +75,43 @@
     opacity: .5;
 }
 
+.btn {
+    display: flex;
+    height: 30px;
+    width: 45%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
 .btn-next {
-    background: #e54255;
+    background: #ffced3;
 }
 
 .btn-prev {
-    background: #ffdc06;
+    background: #fff9d7;
+}
+
+.btn-ok {
+    background: #fff9d7;
+    border-radius: 10px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    div {
+        margin: 10px;
+        padding: 5px;
+        font-weight: 500;
+        font-size: 13px;
+    }
 }
